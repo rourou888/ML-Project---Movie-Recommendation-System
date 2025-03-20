@@ -1,60 +1,43 @@
-# 🎬 Movie Recommendation System  
+# Movie Recommendation System
 
-## 📌 Overview  
-This repository contains the implementation of a **Movie Recommendation System**, leveraging **Content-Based Filtering (CBF) and Collaborative Filtering (CF)** to provide personalized movie recommendations. The system is built using **multiple machine learning models** and trained on **real-world datasets** from reputable sources.  
+## **Overview**
+This project builds a **Movie Recommendation System** using various machine learning algorithms. It involves data preprocessing, merging datasets, and implementing different recommendation methods.
 
----
+## **Datasets Used**
+The project utilizes the following **original datasets**:
 
-## 📂 Datasets  
+1. **ratings.csv** - Contains user ratings for movies.
+2. **movies.csv** - Includes movie titles and metadata.
+3. **tmdb_5000_movies.csv** - Provides additional movie details from TMDB.
+4. **tmdb_5000_credits.zip** - Contains cast and crew information.
 
-Our recommendation system is built using **four original datasets** downloaded from two reliable sources:  
+## **Data Merging Process**
+- The datasets were merged based on the **"movieId"** column.
+- After merging, the data was consolidated into two main files:
+  1. **merged_movie.csv** - Contains the combined movie metadata.
+  2. **merged_ratings.csv** - Holds the merged ratings data.
 
-1. **MovieLens Dataset (GroupLens) 📊**  
-   - **Source:** GroupLens Research Lab, University of Minnesota  
-   - **Description:** Data collected from real users on the **MovieLens** platform.  
-   - **URL:** [MovieLens Dataset](https://grouplens.org/datasets/movielens/latest/)  
+The data merging process is fully documented in the Jupyter Notebook.
 
-2. **TMDB 5000 Movie Dataset (Kaggle) 🎥**  
-   - **Source:** Kaggle  
-   - **Description:** Metadata on 5000+ movies, including genres, keywords, directors, and cast.  
-   - **URL:** [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)  
+## **Implementation**
+The Jupyter Notebook **"Movie Recommendation System"** contains:
+- The entire data preprocessing workflow.
+- The **merging process** for combining datasets.
+- Machine learning algorithms implemented for different **recommendation techniques**:
+  - **Content-Based Filtering**
+  - **Collaborative Filtering (Item-Based & User-Based)**
+  - **Singular Value Decomposition (SVD) & Hybrid Models**
 
----
+## **How to Use**
+1. Open the **"Movie Recommendation System"** Jupyter Notebook.
+2. Follow the **data preprocessing** and merging steps.
+3. Experiment with different recommendation algorithms implemented in the notebook.
 
-## 🏆 Machine Learning Techniques  
-
-This project explores various **Movie Recommendation Techniques**, categorized as:  
-
-### **📌 1. Content-Based Filtering (CBF)**
-- Recommends movies based on their **attributes** (e.g., genres, keywords, directors, and cast).  
-- Utilizes **TF-IDF vectorization**, **cosine similarity**, and **machine learning models** to measure movie similarity.  
-
-### **📌 2. Collaborative Filtering (CF)**
-- Suggests movies based on **user preferences** and behaviors.  
-- Identifies similar users and recommends movies they have rated highly.  
-- Implemented using **both Memory-Based (kNN) and Model-Based (SVD) approaches**.  
-
----
-
-## 🤖 Machine Learning Models  
-
-This project implements the following **ML models** to improve recommendation accuracy:  
-
-| **Model**                    | **Category**               | **Used for**                  |  
-|------------------------------|----------------------------|-------------------------------|  
-| **k-Nearest Neighbors (kNN)**  | Memory-Based CF            | Finding similar users/movies  |  
-| **Linear Regression**         | Model-Based CF (Baseline)  | Predicting user ratings       |  
-| **Random Forest**             | Model-Based CF (Advanced)  | Learning user preferences     |  
-| **Gradient Boosting**         | Model-Based CF (Advanced)  | Improving prediction accuracy |  
-| **Singular Value Decomposition (SVD)** | Matrix Factorization | Predicting missing ratings |  
+## **Next Steps**
+- Further improve recommendation accuracy using **hybrid methods**.
+- Experiment with **deep learning approaches** for better personalization.
+- Optimize computational efficiency for large datasets.
 
 ---
+For any queries, feel free to contribute or reach out!
 
-## 🚀 How to Use  
-
-### **🔹 1. Install Dependencies**  
-Clone this repository and install the required dependencies:  
-```bash
-git clone https://github.com/your-username/movie-recommendation-system.git
-cd movie-recommendation-system
-pip install -r requirements.txt
