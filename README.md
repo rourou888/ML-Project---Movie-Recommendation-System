@@ -24,9 +24,12 @@ The Jupyter Notebook **"Movie Recommendation System"** contains:
 - The entire data preprocessing workflow.
 - The **merging process** for combining datasets.
 - Machine learning algorithms implemented for different **recommendation techniques**:
-  - **Content-Based Filtering**
-  - **Collaborative Filtering (Item-Based & User-Based)**
-  - **Singular Value Decomposition (SVD) & Hybrid Models**
+	- k-Nearest Neighbors (kNN)
+	- Linear Regression
+	- Random Forest
+	- Gradient Boosting
+	- Singular Value Decomposition (SVD)
+
 
 ## **How to Use**
 1. Open the **"Movie Recommendation System"** Jupyter Notebook.
