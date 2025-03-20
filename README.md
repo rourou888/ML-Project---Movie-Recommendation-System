@@ -4,12 +4,15 @@
 This project builds a **Movie Recommendation System** using various machine learning algorithms. It involves data preprocessing, merging datasets, and implementing different recommendation methods.
 
 ## **Datasets Used**
-The project utilizes the following **original datasets**:
+The project utilizes the following 4 **original datasets**:
 
+MovieLens Latest Datasets: https://grouplens.org/datasets/movielens/latest/
 1. **ratings.csv** - Contains user ratings for movies.
 2. **movies.csv** - Includes movie titles and metadata.
-3. **tmdb_5000_movies.csv** - Provides additional movie details from TMDB.
-4. **tmdb_5000_credits.zip** - Contains cast and crew information.
+
+TMDB 5000 Movie Dataset: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
+1. **tmdb_5000_movies.csv** - Provides additional movie details from TMDB.
+2. **tmdb_5000_credits.zip** - Contains cast and crew information.
 
 ## **Data Merging Process**
 - The datasets were merged based on the **"movieId"** column.
